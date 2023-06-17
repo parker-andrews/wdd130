@@ -1,0 +1,59 @@
+  @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root {
+    --primary-color: #00bbf9;
+    --secondary-color: #fee440;
+    --accent-1-color: #00f5d4;
+    --accent-2-color: #f15bb5;
+
+    --heading-font: Oswald, serif;
+    --paragraph-font: Lato, serif;
+
+    --nav-background-color: #fee440;
+    --nav-link-color: #f15bb5;
+    --nav-hover-link-color: #9b5de5;
+    --nav-hover-background-color: #00bbf9;
+
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent-1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-link-color);
+    background-color: var(--nav-link-hover-color);
+}
